@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Lab2_IntroductionToJUnit"/>
+	<classpathentry kind="src" path="Lab4_BVT"/>
+	<classpathentry kind="src" path="Lab5_EC"/>
+	<classpathentry kind="src" path="Lab7_Whitebox"/>
+	<classpathentry kind="src" path="Lab8_netSalary"/>
+	<classpathentry kind="src" path="Lab9_Mockito/main/java"/>
+	<classpathentry kind="src" path="Lab9_Mockito/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
