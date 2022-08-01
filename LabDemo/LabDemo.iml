@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Lab8_netSalary" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lab9_Mockito/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lab9_Mockito/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lab3_DesigningEffectiveTestCases" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
