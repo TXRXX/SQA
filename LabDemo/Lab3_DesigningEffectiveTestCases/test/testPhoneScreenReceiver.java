@@ -61,4 +61,9 @@ public class testPhoneScreenReceiver {
         System.out.println("noAttemp = 6 && isCorrectPwd = false --> Expected Result = Locked");
         phoneScreenReceiver.onReceive(10, false);
     }
+
+    @AfterEach
+    void doneFunc() {
+        System.out.println("========== DONE ==========");
+    }
 }
