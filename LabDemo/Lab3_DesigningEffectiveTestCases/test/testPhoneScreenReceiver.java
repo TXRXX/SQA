@@ -18,7 +18,7 @@ public class testPhoneScreenReceiver {
     @DisplayName("TC01")
     void testTC01(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 0 && isCorrectPwd = true --> Expected Result = Unlocked");
+        System.out.println("noAttempt = 0 && isCorrectPwd = true --> Expected Result = Unlocked");
         phoneScreenReceiver.onReceive(1, true);
     }
 
@@ -26,15 +26,15 @@ public class testPhoneScreenReceiver {
     @DisplayName("TC02")
     void testTC02(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 5 && isCorrectPwd = true --> Expected Result = Unlocked");
-        phoneScreenReceiver.onReceive(5, true);
+        System.out.println("noAttempt = 4 && isCorrectPwd = true --> Expected Result = Unlocked");
+        phoneScreenReceiver.onReceive(4, true);
     }
 
     @RepeatedTest(value = 3, name = RepeatedTest.LONG_DISPLAY_NAME)
     @DisplayName("TC03")
     void testTC03(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 10 && isCorrectPwd = true --> Expected Result = Unlocked");
+        System.out.println("noAttempt = 10 && isCorrectPwd = true --> Expected Result = Unlocked");
         phoneScreenReceiver.onReceive(10, true);
     }
 
@@ -42,7 +42,7 @@ public class testPhoneScreenReceiver {
     @DisplayName("TC04")
     void testTC04(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 1 && isCorrectPwd = false --> Expected Result = Locked");
+        System.out.println("noAttempt = 1 && isCorrectPwd = false --> Expected Result = Locked");
         phoneScreenReceiver.onReceive(1, false);
     }
 
@@ -50,15 +50,15 @@ public class testPhoneScreenReceiver {
     @DisplayName("TC05")
     void testTC05(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 5 && isCorrectPwd = false --> Expected Result = Locked");
-        phoneScreenReceiver.onReceive(5, false);
+        System.out.println("noAttempt = 4 && isCorrectPwd = false --> Expected Result = Locked");
+        phoneScreenReceiver.onReceive(4, false);
     }
 
     @RepeatedTest(value = 3, name = RepeatedTest.LONG_DISPLAY_NAME)
     @DisplayName("TC06")
     void testTC06(TestInfo testInfo, RepetitionInfo repetitionInfo) {
         System.out.println(testInfo.getTestMethod().get().getName() + " : " + repetitionInfo.getCurrentRepetition() + " of " + repetitionInfo.getTotalRepetitions());
-        System.out.println("noAttemp = 6 && isCorrectPwd = false --> Expected Result = Locked");
+        System.out.println("noAttempt = 10 && isCorrectPwd = false --> Expected Result = Locked");
         phoneScreenReceiver.onReceive(10, false);
     }
 
