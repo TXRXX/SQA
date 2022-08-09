@@ -12,11 +12,19 @@ public class testGradeEnum {
 
     @ParameterizedTest
     @CsvSource({
-            "30,30,40",
-            "25,25, 0",
-            "1, 1, 1 ",
-            "20,30,20",
-            "30,30, 0"
+            "0	,15	,20",
+            "1	,15	,20",
+            "15	,15	,20",
+            "29	,15	,20",
+            "30	,15	,20",
+            "15	,0	,20",
+            "15	,1	,20",
+            "15	,29	,20",
+            "15	,30	,20",
+            "15	,15	,0",
+            "15	,15	,1",
+            "15	,15	,39",
+            "15	,15	,40",
     }) void testTS001 (int secA, int secB, int secFinal) {
         gradeEnum = new GradeEnum(secA, secB, secFinal);
         String show = gradeEnum.classify().getName();
@@ -25,11 +33,25 @@ public class testGradeEnum {
 
     @ParameterizedTest
     @CsvSource({
-            "-30,30,40",
-            "-30, 0, 0",
-            "10,-10,10",
-            "40, 30, 30",
-            "50, 50, 50,"
+            "0,15,20",
+            "1,15,20",
+            "15,15,20",
+            "29,15,20",
+            "30,15,20",
+            "15,0,20",
+            "15,1,20",
+            "15,29,20",
+            "15,30,20",
+            "15,15,0",
+            "15,15,1",
+            "15,15,39",
+            "15,15,40",
+            "-1,15,20",
+            "15,-1,20",
+            "15,15,-1",
+            "31,15,15",
+            "15,31,15",
+            "15,15,41"
     }) void testTS002 (int secA, int secB, int secFinal) {
         gradeEnum = new GradeEnum(secA, secB, secFinal);
         String show = gradeEnum.classify().getName();
