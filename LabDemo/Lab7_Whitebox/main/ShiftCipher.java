@@ -26,6 +26,6 @@ public class ShiftCipher {
         }
 
         return stbuilder.toString();
-    }
+   }
 
 }
