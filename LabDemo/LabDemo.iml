@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Lab9_Mockito/test/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lab3_DesigningEffectiveTestCases" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lab6_DT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lab8_UniversalConverter" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
